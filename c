@@ -34,3 +34,5 @@ CREATE table liczby(
     h DECIMAL(4,2));
 
    insert into liczby VALUES (1, 2, 1.1, 2.2, 1.1, 2.2, 1.1, 2.2);
+
+   select a+b, c+d, e+f, g+h, a+b<3, c+d=3.30, e+f=3.3, g+h=3.3 from liczby;
