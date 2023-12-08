@@ -19,3 +19,18 @@ SELECT country_id, country from country where country_id=76;
 
 zad 19
 insert into city(city.city_id, city.country_id, city.city) values('601', '76', 'Knurów');
+
+
+CREATE DATABASE liczone; 
+
+CREATE table liczby(
+    a INT,
+    b INT,
+    c FLOAT,
+    d FLOAT,
+    e DOUBLE,
+    f DOUBLE,
+    g DECIMAL(4,2),
+    h DECIMAL(4,2));
+
+   insert into liczby VALUES (1, 2, 1.1, 2.2, 1.1, 2.2, 1.1, 2.2);
