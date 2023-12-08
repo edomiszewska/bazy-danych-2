@@ -30,9 +30,29 @@ CREATE table liczby(
     d FLOAT,
     e DOUBLE,
     f DOUBLE,
-    g DECIMAL(4,2),
+    g DECIMAL(4,2),     --> 4 liczby, 2 miejsca po przecinku
     h DECIMAL(4,2));
 
    insert into liczby VALUES (1, 2, 1.1, 2.2, 1.1, 2.2, 1.1, 2.2);
 
    select a+b, c+d, e+f, g+h, a+b<3, c+d=3.30, e+f=3.3, g+h=3.3 from liczby;
+
+
+    ------------------TYPY DANYCH ------------------
+        typy:   długość:
+        int       4
+        float     4
+        double    8
+        decimal   M+2
+
+        typy daty i czasu
+        typ danych    przyklad                dane
+        date          2015-03-15              data w formacie: RRRR-MM-DD
+        datetime      2015-03-15 14:15:25     data i czas w formacie: RRRR-MM-DD HH:MM:SS
+        timestamp     2015-03-15 14:15:25     automatyczne odnowienie daty i czasu z systemu
+        time          14:15:25                czas HH:MM:SS
+        year          2015                    RRRR
+
+        char i vchar
+        
+
