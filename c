@@ -54,6 +54,26 @@ CREATE table liczby(
         year          2015                    RRRR
 
         char i varchar
+        co to typ znakomy text
+        typ znakowy enum i set 
 
+
+        create table zapas(
+        id SERIAL,
+        nazwa varchar(100),
+        stan enum('wysoki','sredni','niski')
+        );
+
+        insert into zapas (nazwa, stan) values ('Mleko', 'wysoki')
+        insert into zapas (nazwa, stan) values ('Ser', 'sredni');
+        insert into zapas (nazwa, stan) values ('Jogurt', 'niski'); 
+        insert into zapas (nazwa, stan) values ('kefir', 'wysoki'); 
+        insert into zapas (nazwa, stan) values ('kefir', 'wysoka'); 
+        insert into zapas (nazwa, stan) values ('kefir', '3');
+        delete from zapas where id='6';
+        delete from zapas where id='5';
+
+
+        
         
 
