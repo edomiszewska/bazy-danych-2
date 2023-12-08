@@ -53,6 +53,7 @@ CREATE table liczby(
         time          14:15:25                czas HH:MM:SS
         year          2015                    RRRR
 
-        char i vchar
+        char i varchar
+
         
 
