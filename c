@@ -74,6 +74,28 @@ CREATE table liczby(
         delete from zapas where id='5';
 
 
-        
+        zadanie stworz tabele z enum bardziej rozbudowana wiecej stanow na enum
         
 
+       create table arabski_targ(
+        id SERIAL,
+        nazwa varchar(100),
+        rodzaj enum('perfumy','dywany','inne', 'przyprawy', 'owoce'),
+    	firma enum('salam', 'alladyn', 'inna')
+        );
+
+insert into arabski_targ (rodzaj, firma) values ('', ''); 
+insert into arabski_targ (rodzaj, firma, nazwa) values ('dywany', 'alladyn', 'niebieski dywan');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('dywany', 'alladyn', 'zielony dywan', '3');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('dywany', 'alladyn', 'fioletowy dywan', '4');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('perfumy', 'salam', 'waniliowy perfum', '5');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('perfumy', 'salam', 'różany perfum', '6');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('perfumy', 'salam', 'fiołkowyy perfum', '7');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('przyprawy', 'inna', 'pieprz', '8');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('przyprawy', 'inna', 'papryka', '9');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('przyprawy', 'inna', 'sól', '10');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('owoce', 'inna', 'mandarynki', '11');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('owoce', 'inna', 'banany', '12');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('owoce', 'inna', 'jabłka', '13');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('owoce', 'inna', 'winogrona', '14');
+insert into arabski_targ (rodzaj, firma, nazwa, id) values ('owoce', 'inna', 'kiwi', '15');
